@@ -38,6 +38,9 @@
     <ClCompile Include="Programa.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
+    <ClCompile Include="PopUpForm.cpp">
+      <Filter>Forms</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Uchitel.h">
@@ -58,5 +61,12 @@
     <ClInclude Include="Programa.h">
       <Filter>Classes</Filter>
     </ClInclude>
+    <ClInclude Include="PopUpForm.h">
+      <Filter>Forms</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WeeklySchedule.rc" />
   </ItemGroup>
 </Project>

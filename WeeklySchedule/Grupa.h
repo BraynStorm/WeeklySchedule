@@ -2,7 +2,7 @@
 
 #include <map>
 
-#include "Uchitel.h";
+#include "Uchitel.h"
 
 class Grupa {
 	public:

@@ -7,18 +7,19 @@
 using namespace std;
 using namespace WeeklySchedule;
 
-[STAThread]
-int main() {
+Klass* selectedKlass;
+Grupa* selectedGrupa;
+Uchitel* selectedUchitel;
+Predmet* selectedPredmet;
+
+
+vector<Klass> klasove;
+
+[STAThread] int main() {
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+
 	MyForm theForm;
-	vector<Klass> klasove;
-
-	Klass* selectedKlass;
-	Grupa* selectedGrupa;
-	Uchitel* selectedUchitel;
-	Predmet* selectedPredmet;
-
-	//Application::Run(%theForm);
-	
-
+	Application::Run(%theForm);
 	return 0;
 }

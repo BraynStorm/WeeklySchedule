@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Grupa.h";
+#include "Grupa.h"
 
 class Klass {
 	public:

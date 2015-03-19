@@ -71,6 +71,7 @@
     <ClCompile Include="Grupa.cpp" />
     <ClCompile Include="Klass.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PopUpForm.cpp" />
     <ClCompile Include="Programa.cpp" />
     <ClCompile Include="WeeklySchedule.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
@@ -94,7 +95,11 @@
   <ItemGroup>
     <ClInclude Include="Grupa.h" />
     <ClInclude Include="Klass.h" />
+    <ClInclude Include="PopUpForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Programa.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="WeeklySchedule.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -107,6 +112,17 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PopUpForm.resx">
+      <DependentUpon>PopUpForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeeklySchedule.resx">
+      <DependentUpon>WeeklySchedule.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WeeklySchedule.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
