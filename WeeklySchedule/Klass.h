@@ -1,15 +1,15 @@
 #pragma once
 
-#include <iostream>
-#include <vector>
-
 #include "Grupa.h";
 
-using namespace std;
 class Klass {
 	public:
 
+		/* Otdelnite grupi za tozi klas (nai-chesto 2)*/
 		vector<Grupa> grupi;
+
+		/* Obshti predmeti za wsichki grupi */
+		vector<Predmet> predmeti;
 
 		Klass();
 		~Klass();

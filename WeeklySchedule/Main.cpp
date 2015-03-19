@@ -11,9 +11,14 @@ using namespace WeeklySchedule;
 int main() {
 	MyForm theForm;
 	vector<Klass> klasove;
-	
-	Application::Run(%theForm);
 
+	Klass* selectedKlass;
+	Grupa* selectedGrupa;
+	Uchitel* selectedUchitel;
+	Predmet* selectedPredmet;
+
+	//Application::Run(%theForm);
+	
 
 	return 0;
 }

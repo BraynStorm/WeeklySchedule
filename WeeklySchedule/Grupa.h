@@ -1,20 +1,22 @@
 #pragma once
 
-#include <iostream>
 #include <map>
 
 #include "Uchitel.h";
-#include "Predmet.h";
-
-using namespace std;
-
-typedef pair<Uchitel, Predmet> UchitelPredmetPair;
 
 class Grupa {
 	public:
+		/* id na grupata (t.e. purva, vtora, etc) */
 		int id;
-		map<Uchitel, Predmet> predmeti;
+
+		/* Vector s vsichki uchiteli, koito prepodavat  !!! SAMO !!!  na tazi grupa */
+		vector<Uchitel> uchiteli;
+
+		/* BroiChasove za vseki predmet */
 		map<Predmet, int> broiChasove;
+
+		Uchitel* getUchitel(string);
+
 		Grupa();
 		~Grupa();
 };

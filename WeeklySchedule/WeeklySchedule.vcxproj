@@ -71,6 +71,7 @@
     <ClCompile Include="Grupa.cpp" />
     <ClCompile Include="Klass.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Programa.cpp" />
     <ClCompile Include="WeeklySchedule.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -93,6 +94,7 @@
   <ItemGroup>
     <ClInclude Include="Grupa.h" />
     <ClInclude Include="Klass.h" />
+    <ClInclude Include="Programa.h" />
     <ClInclude Include="WeeklySchedule.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -105,11 +107,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="WeeklySchedule.resx">
-      <DependentUpon>WeeklySchedule.h</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
